@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*9%lq)!&z9vx$7e=mckw8jsz)c6%jsh-f7&$9=l!yw#$(xul!y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['pit3.onrender.com']
+ALLOWED_HOSTS = ['pit3.onrender.com', 'www.pit3.onrender.com']
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'todo_app',
     'rest_framework',
     'corsheaders',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
     'https://react-to-do-app-front.netlify.app/'
 ]
